@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body class="body">
+  <body class="body data-page">
     <header class="header">
       <div class="conteiner header-conteiner">
         <a href="" class="header-logo"
@@ -30,7 +30,7 @@
         <nav class="header-nav">
           <ul class="site-list">
             <li class="header-item">
-              <a class="nav-item--active" href="">Студия</a>
+              <a class="nav-item--active current" href="">Студия</a>
             </li>
             <li class="header-item">
               <a class="nav-item" href="./portfolio.html">Портфолио</a>
@@ -65,7 +65,9 @@
       <section class="section-hero">
         <div class="conteiner conteiner-hero">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button data-modal-open class="hero-btn" type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Features -->
@@ -135,6 +137,7 @@
                 width="370"
                 height="294"
               />
+              <h3 class="special-name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="specialization-item">
               <img
@@ -143,6 +146,7 @@
                 width="370"
                 height="294"
               />
+              <h3 class="special-name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="specialization-item">
               <img
@@ -151,11 +155,12 @@
                 width="370"
                 height="294"
               />
+              <h3 class="special-name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
             </li>
           </ul>
         </div>
       </section>
-      <!-- Section-4 -->
+      <!-- Section team -->
       <section class="team">
         <div class="conteiner">
           <h2 class="team-title">Наша команда</h2>
@@ -427,6 +432,7 @@
           </ul>
         </div>
       </section>
+      <!-- Section clients -->
       <section class="clients">
         <div class="conteiner">
           <h2 class="clients-title">Постоянные клиенты</h2>
@@ -602,5 +608,16 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="close-btn" type="button">
+          <svg class="icon-close" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
