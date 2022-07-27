@@ -601,6 +601,19 @@ img {
 .connect-icons {
   fill: currentColor;
 }
+
+.footer-form {
+  display: flex;
+  margin-left: 93px;
+}
+.form-txt {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-footer-color);
+}
 /* Modal */
 
 .backdrop {
